@@ -7,6 +7,7 @@ Copilot premium-request analytics CLI.
 
 ```sh
 brew tap bariiss/coprem
+brew trust bariiss/coprem        # one-time: Homebrew 6.0+ requires explicit trust
 brew install --cask coprem
 ```
 
