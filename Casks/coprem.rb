@@ -13,7 +13,7 @@ cask "coprem" do
 
   binary "coprem"
 
-  post_install do
+  postflight do
     next unless OS.mac?
 
     system_command "/usr/bin/xattr",
