@@ -1,9 +1,9 @@
 cask "coprem" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.3.9"
-  sha256 arm:   "ff1cf1b7864c4bbe982756c292e4a6dd09ebbfdfda0c097a679101fdb81b5b60",
-         intel: "50d8e7c1fb4d99b369ce797a4a5b1f6a0760dcb74fea2f8ff71981f279380553"
+  version "0.3.11"
+  sha256 arm:   "56d7c59df2210324c3465aa860123aeff806dc6f5232b83f51e5d51961f8017f",
+         intel: "4dfa2096696670e0b09cfef89f441ee924f8f5855d40c13190b0c5703faf8161"
 
   url "https://github.com/bariiss/coprem/releases/download/v#{version}/coprem_#{version}_darwin_#{arch}.tar.gz"
   name "coprem"
