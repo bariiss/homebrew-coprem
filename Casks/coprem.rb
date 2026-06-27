@@ -13,12 +13,10 @@ cask "coprem" do
 
   binary "coprem"
 
-  post-install do
-    if OS.mac?
-      system_command "/usr/bin/xattr",
-                     args: ["-dr", "com.apple.quarantine", "#{staged_path}/coprem"]
-    end
-  end
+  post_install do
+    next unless OS.mac?
 
-  # No zap needed: the binary is a standalone CLI with no app bundles.
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/coprem"]
+  end
 end
